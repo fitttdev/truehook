@@ -7,4 +7,10 @@ export class AppController {
   root() {
     return { message: 'Truehook Root' };
   }
+
+  @Get('truehook')
+  @Render('truehook')
+  truehook() {
+    return { truehook: 'Truehook Page' };
+  }
 }
