@@ -3,6 +3,7 @@ import { UsersService } from './users.service';
 import { UsersController } from './users.controller';
 import { DbModule } from 'src/db';
 import { UserEntity, UserSchema } from './entities/user.entity';
+import { UsersRepository } from './users.repository';
 
 @Module({
   imports: [
@@ -10,6 +11,6 @@ import { UserEntity, UserSchema } from './entities/user.entity';
     DbModule.forFeature([{ name: UserEntity.name, schema: UserSchema }]),
   ],
   controllers: [UsersController],
-  providers: [UsersService],
+  providers: [UsersService, UsersRepository],
 })
 export class UsersModule {}
