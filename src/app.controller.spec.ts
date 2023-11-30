@@ -16,7 +16,8 @@ describe('AppController', () => {
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      console.log('NIma', appController.root());
+      expect(appController.root().message).toBe('Truehook Root');
     });
   });
 });
