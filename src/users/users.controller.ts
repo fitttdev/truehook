@@ -17,7 +17,7 @@ export class UsersController {
   constructor(private readonly usersService: UsersService) {}
 
   @Get('register')
-  @Render('register')
+  @Render('users/register')
   registerForm() {
     return {};
   }
