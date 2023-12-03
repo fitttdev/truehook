@@ -1,0 +1,20 @@
+<!-- providers/index.hbs -->
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each providers}}
+      <tr>
+        <td>{{this._id}}</td>
+        <td>
+          <a href="/providers/{{this._id}}"> {{this.identifier}}</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+<!-- providers/show.hbs -->
+<h2>ID: {{provider._id}}</h2>
+<h2>Identifier: {{provider.identifier}}</h2>
+
+<a href="/providers/edit/{{provider._id}}">Edit</a>
+<a href="/providers/{{provider._id}}" data-method="DELETE" data-confirm="Are you sure?">Delete</a>
+
+{{!-- Using Button --}}
+{{!-- <form action="/providers/edit/{{provider._id}}" method="GET">
+  <button type="submit">Edit</button>
+</form>
+
+<form action="/providers/{{provider._id}}" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit" onclick="return confirm('Are you sure?')">Delete</button>
+</form> --}}

@@ -1,0 +1,8 @@
+<!-- providers/edit.hbs -->
+<form action="/providers/{{provider._id}}" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  <label for="identifier">Identifier:</label>
+  <input type="text" id="identifier" name="identifier" value="{{provider.identifier}}" required>
+
+  <button type="submit">Edit</button>
+</form>
